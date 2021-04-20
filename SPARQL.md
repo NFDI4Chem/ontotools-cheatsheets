@@ -60,7 +60,7 @@ Example: filter only ?label with *any* `@en` variant (will match all of these: `
 * `STRENDS()`  string in first arg ends with string in second arg
 * `CONTAINS()` string in second arg is within first arg. Example: `CONTAINS("SPARQL", "QL")` is True. `FILTER(CONTAINS(str(?term), "iao") || CONTAINS(str(?term), "bfo") || CONTAINS(str(?term), "obo")) ` 
 * `REPLACE()` replaces 1st agument (input) that matches the 2nd argument with the 3rd argument. Example: `REPLACE(?contact_email_tmp_str, "mailto:", "")` replacing with nothing. 
-    * The result can be bound to a new variable: BIND(REPLACE(?contact_email_tmp_str, "mailto:", "") AS ?contact_email) .
+    * The result can be bound to a new variable: `BIND(REPLACE(?contact_email_tmp_str, "mailto:", "") AS ?contact_email) .`
 
 ## Data Conversions
 **Uses xsd: daatatypes**
