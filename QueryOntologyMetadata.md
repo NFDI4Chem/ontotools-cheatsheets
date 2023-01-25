@@ -1,5 +1,28 @@
 # Ontology commandline hacks
 
+The following examples might come in useful if somebody creates, say, 
+a spreadsheet table with information about a number of ontologies. 
+
+Some of that information and metadata is available from multiple places, 
+such as the OBOfoundry collection of ontologies, or portals like the 
+[NCBO BioPortal](bioportal.bioontology.org/), 
+the [Ontology Lookup Service (OLS)](https://www.ebi.ac.uk/ols/)
+or the [Terminology Services](https://service.tib.eu/ts4tib/) in several NFDI consortia.
+
+You probably would like to avoid manual copy&paste across all these, 
+so here are some code snippets to query and extract the metadata 
+through / from these services.
+
+### dependencies
+
+The code snippets started as (longish) one-liners, and were reformatted here 
+for better readability. They use common (linux) command line tools.
+
+The `jq` and `yq` are JSON and Yaml swiss-army knifes (similar to xq for XML) 
+and a nice way to extract, query and pretty-print JSON and yaml, 
+see https://blog.lazy-evaluation.net/posts/linux/jq-xq-yq.html ,
+https://stedolan.github.io/jq/ and https://github.com/mikefarah/yq/.
+
 ## Bioportal
 
 ### Get Bioportal Categories (keywords) 
